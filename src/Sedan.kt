@@ -1,0 +1,1 @@
+class Sedan : Car()
