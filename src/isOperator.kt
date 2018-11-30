@@ -5,7 +5,6 @@ val intVal : Double = 1.0
 
 fun cal (age :Int){
 
-    val age : Int = 25
     val ageRange : String
     val number : Int = 20
 
@@ -25,7 +24,10 @@ fun cal (age :Int){
 
     val ageRange2 : String = if(age >= 10 && age <20)"10대" else if(age >= 20 && age <30 )"20대" else "기타"
 
-    val numbers = if(number % 2 == 0) "짝" else "홀"
+    val numbers = if(age % 2 == 0) "짝" else "홀"
+
+    val num = if(age %2 == 0) "짝" else "홀"
+
 
     when(bags){
 
@@ -48,6 +50,16 @@ fun cal (age :Int){
         is Exception-> println("하하")
         else -> println("망")
     }
+//
+//    var sr = when(e){
+//
+//        is Exception -> "s"
+//        is NullPointerException ->"x"
+//        is NumberFormatException ->"y"
+//        else ->"sq"
+//    }.substring(1,3)?:"test"
+
+
 
 
     var a: Int  =0
@@ -64,6 +76,13 @@ fun cal (age :Int){
 
     for(i in names.indices){
         println(names[i])
+    }
+
+
+    val intra : IntRange = 0..4
+
+    for(i in 5 downTo 1 step 2){
+        println("값 $i")
     }
 
     val myRange : IntRange = 0..10
@@ -125,6 +144,7 @@ fun printTypeName(obj : Any) {
 data class Te constructor(val name :String){
 
 }
+
 
 
 
